@@ -14,3 +14,12 @@ vim.keymap.set({ 't', 'i' }, '<C-j>', '<C-\\><C-n><C-j>')
 vim.keymap.set({ 't', 'i' }, '<C-k>', '<C-\\><C-n><C-k>')
 vim.keymap.set({ 't', 'i' }, '<C-l>', '<C-\\><C-n><C-l>')
 
+function get_telescope_remaps()
+	return	{
+		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Telescope find files" },
+		{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Telescope live grep" },
+		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Telescope buffers" },
+		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Telescope help tags" },
+	}
+end
+
