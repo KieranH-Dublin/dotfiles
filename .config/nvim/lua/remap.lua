@@ -22,3 +22,19 @@ function get_telescope_remaps()
 	}
 end
 
+function get_harpoon_remaps(harpoon)
+	return	{
+		{"<leader>ha", function() harpoon:list():add() end},
+		{"<leader>hf", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end},
+
+		{"<leader>hy", function() harpoon:list():select(1) end},
+		{"<leader>hu", function() harpoon:list():select(2) end},
+		{"<leader>hi", function() harpoon:list():select(3) end},
+		{"<leader>ho", function() harpoon:list():select(4) end},
+
+		-- Toggle previous & next buffers stored within Harpoon list
+		{"<leader>hb", function() harpoon:list():prev() end},
+		{"<leader>hn", function() harpoon:list():next() end},
+	}
+end
+

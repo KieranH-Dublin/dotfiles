@@ -48,6 +48,7 @@ require("commands")
 
 -- plugins
 require("lazyboi")
-require("monokai-nightasty").load({})
 
+require("monokai-nightasty").load({})
+require("harpoon-setup")
 
