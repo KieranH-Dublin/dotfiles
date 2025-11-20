@@ -45,5 +45,9 @@ vim.o.confirm = true
 
 require("remap")
 require("commands")
+
+-- plugins
 require("lazyboi")
+require("monokai-nightasty").load({})
+
 
