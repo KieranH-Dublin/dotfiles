@@ -5,6 +5,6 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     keys=get_telescope_remaps(),
     config=function()
-	require("telescope").setup()
-end,
-    }
+        require("telescope").setup()
+    end,
+}

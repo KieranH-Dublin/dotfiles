@@ -43,6 +43,13 @@ vim.o.list = true
 -- instead raise a dialog asking if you wish to save the current file(s) See `:help 'confirm'`
 vim.o.confirm = true
 
+-- Tabs
+vim.opt.tabstop = 4      -- Number of visual spaces per TAB
+vim.opt.shiftwidth = 4   -- Number of spaces to use for each step of (auto)indent
+vim.opt.expandtab = true -- Convert TABs to spaces
+vim.opt.softtabstop = 4  -- Makes <Tab> feel like 4 spaces when editing
+vim.opt.smartindent = true
+
 require("remap")
 require("commands")
 
